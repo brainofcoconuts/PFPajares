@@ -1,0 +1,44 @@
+//Ajustes para los tratamientos
+
+.contenedorGeneral{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  max-width: 100%;
+  }
+.contenedorVideos {
+  display: flex;
+  @include position (relative, center, 1rem);
+  max-width: 100%;
+  }
+
+.contenedorTratamientos {
+
+  display: flex;
+  position: relative;
+  margin:1rem;
+  padding: 2rex;
+  color-interpolation-filters: auto;
+  border: 4px solid lightskyblue;
+  border-radius: 30px;
+  min-width: 100px;
+  max-width: 700px;
+
+  .imgTratamiento {
+    margin: center;
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(172, 172, 172);
+    height: auto;
+
+  }
+
+  .parrafoTratamiento {
+    word-wrap: break-word;
+    overflow: auto;
+    text-overflow: ellipsis;
+    @include position (relative, auto, 10px);
+    display: flex;
+    font-family: $font-family;
+    height: auto;
+  }
+}

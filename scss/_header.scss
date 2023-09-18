@@ -1,0 +1,33 @@
+//para el encabezado
+header {
+    background-color: rgb(228, 255, 255);
+    border-bottom: 5px solid $border-color;
+    text-align: auto;
+    padding: 10px 20px;
+  
+    .botonera {
+      font-weight: $font-weight-regular;
+      font-family: sans-serif;
+      &:active {color: blue;}
+      &:hover,&:focus{background-size:100% 2px;}
+    }
+  
+    .logosize {
+      width: 150px;
+      margin: 20px 10px;
+    }
+  
+    nav ul li {
+      list-style: none;
+      display: inline-table;
+      margin: 5px;
+  
+      a {
+        text-decoration: none;
+        text-transform: $text-transform-uppercase;
+        font-weight: $font-weight-regular;
+        color: black;
+        font-family: $font-family;
+      }
+    }
+  }

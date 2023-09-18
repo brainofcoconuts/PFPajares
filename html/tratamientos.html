@@ -2,8 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo Smile Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Grupo Smile Up, ofrecemos servicios dentales de alta calidad. Nuestros especialistas se preocupan por tu sonrisa y salud bucal. ¡Programa tu cita hoy!" />
+    <meta name="keywords" content="odontología, salud dental, tratamientos dentales, implantes dentales, ortodoncia, estética dental, tratamientos dentales, sonrisa saludable, clínica dental, dentista de confianza, dental, dentista Lima, dentista Perú ">
+
+    <title>Grupo Smile Up - Especialistas en Odontología y Salud Bucal con tecnologia láser</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/favicon"/>
     <!-- BS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -12,35 +16,35 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
-  <center>
+
   <body class="container-fluid">
-    <header class="navbar navbar-expand-md botonera sticky-top">
-      <img src="../img/logo1.png" alt="logo smileup" width="100px" />
-      <div class="container-fluid">
+    <header
+      class="botonera navbar navbar-expand-lg bg-body-tertiary sticky-top"
+    >
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png"width="100px" alt="Logotipo GrupoSmileUp"></a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <nav class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
+              <a class="nav-link active" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../html/tratamientos.html"
-                >Tratamientos</a
-              >
+              <a class="nav-link" href="../html/tratamientos.html">Tratamientos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../html/ubicacion.html">Ubicación</a>
@@ -48,116 +52,107 @@
             <li class="nav-item">
               <a class="nav-link" href="../html/videos.html">Videos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contactos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/contacto.html">Separa tu Cita</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="https://www.facebook.com/gruposmileup" target="_blank">Nuestro Facebook</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/gruposmileupclinicadental/" target="_blank">Nuestro Instagram</a></li>                          
+              </ul>
             </li>
+          
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <h2>Nuestros tratamientos más destacados</h2>
-      <div class="contenedorTratamientos">
-        <h3>Tecnología Láser</h3>
-        <img
-          class="imgTratamiento"
-          src="../img/Foto tecnologia laser1.png"
-          alt="tecnología Laser"
-        />
-        <div class="parrafoTratamiento">
-          <div class="mx-auto">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
-              nihil, modi, asperiores animi, atque veniam officiis perspiciatis
-              temporibus itaque sint laborum nobis. Mollitia fugiat nesciunt
-              veritatis saepe vitae distinctio corporis nostrum recusandae amet
-              similique provident quam dignissimos in praesentium commodi,
-              doloribus placeat debitis. At eum, fugit voluptates adipisci,
-              facilis illum dolorem cumque nam officiis tenetur porro aut,
-              tempore expedita?
-            </p>
-          </div>
+      <h2>Nuestros tratamientos dentales más destacados</h2>
+<div class="contenedorGeneral">
+      
+      <div class="slide-in-bottom card text-center container-fluid contenedorTratamientos" style="width: auto;">
+        <img src="../img/Foto tecnologia laser1.png" class="card-img-top imgTratamiento" alt="Ventajas del Laser">
+        <div class="card-body"> <h4>Tecnología Láser</h4>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
+            nihil, modi, asperiores animi, atque veniam officiis perspiciatis
+            temporibus itaque sint laborum nobis. </p>
+            <a href="../html/contacto.html"
+            >
+            <center>
+            <button type="button" class="btn-tratamientos">
+              Tratamientos sin dolor
+            </button>
+          </center></a>
         </div>
       </div>
-      <div class="contenedorTratamientos">
-        <h3>Ventajas de Implantes Bicon</h3>
-        <img
-          class="imgTratamiento"
-          src="../img/Foto Ventajas implantes.png"
-          alt="Implantes Bicon"
-        />
-        <div class="parrafoTratamiento">
-          <div class="mx-auto">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
-              nihil, modi, asperiores animi, atque veniam officiis perspiciatis
-              temporibus itaque sint laborum nobis. Mollitia fugiat nesciunt
-              veritatis saepe vitae distinctio corporis nostrum recusandae amet
-              similique provident quam dignissimos in praesentium commodi,
-              doloribus placeat debitis. At eum, fugit voluptates adipisci,
-              facilis illum dolorem cumque nam officiis tenetur porro aut,
-              tempore expedita?
-            </p>
-          </div>
+      <div class="slide-in-bottom2 card text-center container-fluid contenedorTratamientos" style="width: auto;">
+        <img src="../img/Foto Ventajas implantes.png" class="card-img-top imgTratamiento" alt="Ventajas de Implantes">
+        <div class="card-body"> <h4>Ventajas de Implantes Bicon</h4>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
+            nihil, modi, asperiores animi, atque veniam officiis perspiciatis
+            temporibus itaque sint laborum nobis.</p>
+            <a href="../html/contacto.html"
+            >
+            <center>
+            <button type="button" class="btn-tratamientos">
+              Completa tu Sonrisa
+            </button>
+          </center></a>
         </div>
       </div>
-      <div class="contenedorTratamientos">
-        <h3>Revisiones Dentales</h3>
-        <img
-          class="imgTratamiento"
-          src="../img/Revisiones dentales.png"
-          alt="Revisiones Dentales"
-        />
-        <div class="parrafoTratamiento">
-          <div class="mx-auto">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
-              nihil, modi, asperiores animi, atque veniam officiis perspiciatis
-              temporibus itaque sint laborum nobis. Mollitia fugiat nesciunt
-              veritatis saepe vitae distinctio corporis nostrum recusandae amet
-              similique provident quam dignissimos in praesentium commodi,
-              doloribus placeat debitis. At eum, fugit voluptates adipisci,
-              facilis illum dolorem cumque nam officiis tenetur porro aut,
-              tempore expedita?
-            </p>
-          </div>
+      <div class="slide-in-bottom3 card text-center container-fluid contenedorTratamientos" style="width: auto;">
+        <img src="../img/Revisiones dentales.png" class="card-img-top imgTratamiento" alt="Tratamientos Especiales">
+        <div class="card-body"> <h4>Revisiones Dentales</h4>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
+            nihil, modi, asperiores animi, atque veniam officiis perspiciatis
+            temporibus itaque sint laborum nobis.</p>
+            <a href="../html/contacto.html"
+            >
+            <center>
+            <button type="button" class="btn-tratamientos">
+              Especial para Turistas
+            </button>
+          </center></a>
         </div>
       </div>
-
-
-      <div class="contenedorTratamientos">
-        <h3>Experiencia Comprobada</h3>
-        <img
-          class="imgTratamiento"
-          src="../img/Foto jerry recupera.png"
-          alt="Experiencia"
-          
-        />
-        <div class="parrafoTratamiento">
-          <div class="mx-auto">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
-              nihil, modi, asperiores animi, atque veniam officiis perspiciatis
-              temporibus itaque sint laborum nobis. Mollitia fugiat nesciunt
-              veritatis saepe vitae distinctio corporis nostrum recusandae amet
-              similique provident quam dignissimos in praesentium commodi,
-              doloribus placeat debitis. At eum, fugit voluptates adipisci,
-              facilis illum dolorem cumque nam officiis tenetur porro aut,
-              tempore expedita?
-            </p>
-          </div>
+      <div class="slide-in-bottom4 card text-center container-fluid contenedorTratamientos" style="width: auto;">
+        <img src="../img/Foto jerry recupera.png" class="card-img-top imgTratamiento" alt="Experiencia y tecnología">
+        <div class="card-body"> <h4>Revisiones Dentales</h4>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi, odio ut? Fuga in architecto necessitatibus deserunt
+            nihil, modi, asperiores animi, atque veniam officiis perspiciatis
+            temporibus itaque sint laborum nobis.</p>
+            <a href="../html/contacto.html"
+            >
+            <center>
+            <button type="button" class="btn-tratamientos">
+              Agenda tu cita
+            </button>
+          </center></a>
         </div>
       </div>
-    </main>
-
+    </div>
+      </main>
     <footer>
       <h6>Grupo Smile Up - Todos los derechos reservados</h6>
     </footer>
-  </center>
+    <!-- BS CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

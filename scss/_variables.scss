@@ -1,0 +1,28 @@
+//variables
+
+//esquema de color
+$background-color: azure;
+$border-color: cyan;
+$keyColor: rgb(11, 11, 11);
+$white: rgb(238, 233, 233);
+$press-button-color:rgb(44,12,220);
+
+//fonts
+$font-family: sans-serif;
+$text-transform-uppercase: uppercase;
+
+//sizes textos
+$testSm:0.8em;
+$textMd:1em;
+$textXl:2em;
+$textXxl:3em;
+
+//font weight
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-bold: 1000;
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-in-bottom 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}

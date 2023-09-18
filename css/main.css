@@ -1,3 +1,300 @@
-@import url();
+@charset "UTF-8";
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom2 {
+  -webkit-animation: slide-in-bottom2 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom2 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@-webkit-keyframes slide-in-bottom2 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom2 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom3 {
+  -webkit-animation: slide-in-bottom3 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom3 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@-webkit-keyframes slide-in-bottom3 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom3 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom4 {
+  -webkit-animation: slide-in-bottom4 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom4 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@-webkit-keyframes slide-in-bottom4 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom4 {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  background-color: azure;
+}
+
+.parrafoydescripcion {
+  display: grid;
+}
+
+header {
+  background-color: rgb(228, 255, 255);
+  border-bottom: 5px solid cyan;
+  text-align: auto;
+  padding: 10px 20px;
+}
+header .botonera {
+  font-weight: 400;
+  font-family: sans-serif;
+}
+header .botonera:active {
+  color: blue;
+}
+header .botonera:hover, header .botonera:focus {
+  background-size: 100% 2px;
+}
+header .logosize {
+  width: 150px;
+  margin: 20px 10px;
+}
+header nav ul li {
+  list-style: none;
+  display: inline-table;
+  margin: 5px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: black;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 30px;
+  padding: 40px;
+}
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+main h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: inherit;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+main h3 {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.btn-prueba, .btn-tratamientos {
+  position: static;
+  align-self: auto;
+  padding: 1rem;
+  border: 8px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(53, 53, 212), rgb(8, 204, 204));
+  text-align: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(238, 233, 233);
+  border-radius: 10px;
+}
+
+.btn-tratamientos {
+  text-align: center;
+  position: relative;
+}
+.btn-tratamientos:hover {
+  background-image: linear-gradient(to right, rgb(16, 16, 163), rgb(34, 145, 145));
+  color: rgb(11, 11, 11);
+}
+.btn-tratamientos:active {
+  color: rgb(44, 12, 220);
+}
+
+footer {
+  margin: 20px;
+  padding: 30px;
+  border-top: 3px solid cyan;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.contenedorGeneral {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  max-width: 100%;
+}
+
+.contenedorVideos {
+  display: flex;
+  position: relative;
+  left: center;
+  top: 1rem;
+  max-width: 100%;
+}
+
+.contenedorTratamientos {
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  padding: 2rex;
+  color-interpolation-filters: auto;
+  border: 4px solid lightskyblue;
+  border-radius: 30px;
+  min-width: 100px;
+  max-width: 700px;
+}
+.contenedorTratamientos .imgTratamiento {
+  margin: center;
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(172, 172, 172);
+  height: auto;
+}
+.contenedorTratamientos .parrafoTratamiento {
+  word-wrap: break-word;
+  overflow: auto;
+  text-overflow: ellipsis;
+  position: relative;
+  left: auto;
+  top: 10px;
+  display: flex;
+  font-family: sans-serif;
+  height: auto;
+}
+
+form {
+  margin-top: 20px;
+  /* Más reglas para el formulario aquí */
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(11, 11, 11);
+}
+form input[type=text],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.carouselSize {
+  max-width: auto;
+  max-height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

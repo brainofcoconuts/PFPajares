@@ -1,0 +1,55 @@
+//Todo para el Body
+main {
+    margin: 30px;
+    padding: 40px;
+  
+    h1 {
+      text-align: center;
+      text-transform: $text-transform-uppercase;
+      font-family: $font-family;
+      padding-bottom: 20px;
+    }
+  
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: inherit;
+      font-family: $font-family;
+      padding-bottom: 10px;
+    }
+  
+    h3 {
+      font-family: $font-family;
+      text-align: center;
+      margin: 20px;
+    }
+  }
+
+//extend
+.btn-prueba{
+  position: static;
+  align-self: auto;
+  padding: 1rem;
+  border: 8px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(53, 53, 212),rgb(8, 204, 204) );
+  text-align: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  border-radius: 10px;  
+}
+.btn-tratamientos{
+  @extend .btn-prueba;
+  text-align: center;
+  position: relative;
+  &:hover{
+      background-image: linear-gradient(to right, rgb(16, 16, 163),rgb(34, 145, 145) );
+      color:$keyColor;
+  }
+  &:active{
+      color:$press-button-color;
+  }
+}

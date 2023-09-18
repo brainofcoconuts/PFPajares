@@ -2,8 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo Smile Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Grupo Smile Up, ofrecemos servicios dentales de alta calidad. Nuestros especialistas se preocupan por tu sonrisa y salud bucal. ¡Programa tu cita hoy!" />
+    <meta name="keywords" content="odontología, formularios dentista, tratamientos dentales, implantes dentales, ortodoncia, estética dental, tratamientos dentales, sonrisa saludable, clínica dental, dentista de confianza, dental, dentista Lima, dentista Perú ">
+
+    <title>Grupo Smile Up - Especialistas en Odontología y Salud Bucal con tecnologia láser</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/favicon"/>
     <!-- BS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -12,28 +16,32 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
-  
+
   <body class="container-fluid">
-    <header class="navbar navbar-expand-md botonera sticky-top">
-      <img src="../img/logo1.png" alt="logo smileup" width="100px"/>
+    <header
+      class="botonera navbar navbar-expand-lg bg-body-tertiary sticky-top"
+    >
       <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png"width="100px" alt="Logotipo GrupoSmileUp"></a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-               <nav class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../html/tratamientos.html">Tratamientos</a>
@@ -42,20 +50,34 @@
               <a class="nav-link" href="../html/ubicacion.html">Ubicación</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../html/videos.html">Videos</a>
+              <a class="nav-link" href="../html/videos.html">Videos</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="../html/contacto.html">Contacto</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contactos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/contacto.html">Separa tu Cita</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="https://www.facebook.com/gruposmileup" target="_blank">Nuestro Facebook</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/gruposmileupclinicadental/" target="_blank">Nuestro Instagram</a></li>                          
+              </ul>
             </li>
+          
           </ul>
-        </nav>
+        </div>
       </div>
-      
     </header>
 
     <main>
       
-      <div><h2>Contáctanos</h2></div>
+      <div><h2>Separa una Cita</h2></div>
       
 
       <form>
@@ -129,8 +151,8 @@
            
           </div>
        <center>
-        <button type="submit" class="btn btn-outline-info ">Enviar</button>
-        <button type="reset" class="btn btn-outline-info ">Borrar</button>
+        <button type="submit" class="btn btn-prueba btn-outline-info ">Enviar</button>
+        <button type="reset" class="btn btn-prueba btn-outline-info ">Borrar</button>
       </center>
       </form>
 

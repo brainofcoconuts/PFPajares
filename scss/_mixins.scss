@@ -1,0 +1,9 @@
+//mixins
+@mixin position ($type, $left, $top){
+    position: $type;
+    left: $left;
+    top: $top;
+}
+
+
+ 
