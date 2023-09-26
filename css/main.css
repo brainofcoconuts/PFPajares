@@ -130,7 +130,13 @@ body {
 }
 
 .parrafoydescripcion {
-  display: grid;
+  font-size: 0.8em;
+  text-decoration: none;
+  max-width: auto;
+  min-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -163,7 +169,7 @@ header nav ul li a {
   text-transform: uppercase;
   font-weight: 400;
   color: black;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main {
@@ -173,7 +179,7 @@ main {
 main h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-bottom: 20px;
 }
 main h2 {
@@ -181,24 +187,36 @@ main h2 {
   margin-bottom: 10px;
   text-align: center;
   text-transform: inherit;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-bottom: 10px;
 }
 main h3 {
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   margin: 20px;
+  font-size: 1.5em;
+}
+main h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: inherit;
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 10px;
+  font-size: 0.8em;
 }
 
 .btn-prueba, .btn-tratamientos {
   position: static;
+  display: flex;
+  justify-content: space-between;
   align-self: auto;
   padding: 1rem;
   border: 8px;
   text-align: center;
   background-image: linear-gradient(to right, rgb(53, 53, 212), rgb(8, 204, 204));
-  text-align: center;
   margin: 10px;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   color: rgb(238, 233, 233);
@@ -206,8 +224,13 @@ main h3 {
 }
 
 .btn-tratamientos {
+  display: block;
+  margin: 0 auto;
   text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
   position: relative;
+  text-decoration: none;
 }
 .btn-tratamientos:hover {
   background-image: linear-gradient(to right, rgb(16, 16, 163), rgb(34, 145, 145));
@@ -217,44 +240,108 @@ main h3 {
   color: rgb(44, 12, 220);
 }
 
+.btn-container {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  width: calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f5f8;
+  transition: background-color 0.3s ease;
+}
+.btn img {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.btn p {
+  margin-top: 5px;
+}
+.btn:hover {
+  background-color: #56cdf8;
+}
+
 footer {
   margin: 20px;
   padding: 30px;
   border-top: 3px solid cyan;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: small;
 }
 
 .contenedorGeneral {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center space-between;
+  align-items: center;
+  max-width: 80%;
+}
+@media screen and (max-width: 750px) {
+  .contenedorGeneral {
+    flex-direction: column;
+  }
 }
 
 .contenedorVideos {
   display: flex;
   position: relative;
   left: center;
-  top: 1rem;
+  top: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start center;
   max-width: 100%;
+  padding: 0.1rem;
+  overflow: hidden;
+}
+.contenedorVideos .video {
+  max-width: 90%;
+}
+.contenedorVideos .texto {
+  max-width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 850px) {
+  .contenedorVideos .video {
+    max-width: 33%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenedorVideos {
+    flex-direction: column;
+  }
+  .contenedorVideos .video {
+    max-width: 90%;
+  }
 }
 
 .contenedorTratamientos {
+  align-items: flex-start center;
   display: flex;
-  position: relative;
-  margin: 1rem;
-  padding: 2rex;
-  color-interpolation-filters: auto;
-  border: 4px solid lightskyblue;
-  border-radius: 30px;
-  min-width: 100px;
-  max-width: 700px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50%;
+  margin-block-start: 1rem;
+  padding: 0.1rem;
+  overflow: hidden;
 }
 .contenedorTratamientos .imgTratamiento {
-  margin: center;
-  display: flex;
-  width: 100%;
+  margin: auto;
+  max-width: 80%;
   border: 1px solid rgb(172, 172, 172);
   height: auto;
 }
@@ -263,10 +350,7 @@ footer {
   overflow: auto;
   text-overflow: ellipsis;
   position: relative;
-  left: auto;
-  top: 10px;
-  display: flex;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   height: auto;
 }
 
@@ -288,7 +372,7 @@ form textarea {
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 10px;
 }
 
